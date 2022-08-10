@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*le aplicamos un fondo gradiente al body*/
+body{
+    background-image: linear-gradient(#330d5c,#571994);
+    background-repeat: no-repeat;
+}
+
+/*texturas para fondo*/
+#textures{
+    position: absolute;
+    z-index: -1;
+}
+
+/*ajustes del contenedo para el formulario*/
+#form-container{
+    margin-top: 150px;
+    padding: 15px;
+    background-color: #edeff1;
+    border-radius: 10px;
+    
+}
+
+/*circulo titulo punto de venta*/
+.circle {
+    display: inline-table;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    background-color: #330d5c;
+    border-radius: 50%;
+  }
+  
+  .circle__content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  /*formulario*/
+  #form-title{
+    font-size: 18px;
+    color: #878787;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  #texto-terminos{
+    color: #330d5c;
+    font-weight: 540;
+  }
+
+  /*boton submit formulario*/
+  .btn-form{
+   background-color: #330d5c; 
+   color: #ffffff;
+   font-weight: 600;
+   border-radius: 15px;
+   display: block;
+   margin: 0px auto;
+   width: 70%;
+  }
+
+
+
+
