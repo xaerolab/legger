@@ -7,6 +7,7 @@
 body{
     background-image: linear-gradient(#330d5c,#571994);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*texturas para fondo*/
@@ -64,6 +65,16 @@ body{
    display: block;
    margin: 0px auto;
    width: 70%;
+  }
+
+  /*ajustes para responsividad*/
+  @media only screen and (max-width: 991px) {
+    #form-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        
+    }
   }
 
 
