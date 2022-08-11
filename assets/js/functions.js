@@ -151,6 +151,10 @@ $('#register').on('click',function(e){
     //si no hay errores en el formulario
     if(!errNombre && !errNit && !errPunto && !errEquipo && !errCiudad && !errPromotor && !errRtc && !errCapitan && !errTerminos){
         
+        $('#register').addClass('displayNone');
+
+        $('#loader').html('<img src="./assets/img/loader.gif" id="loader">');
+
         //creamos el objeto JSON
         var obj = {	"nombre":nombre,
         			"nit": nit,
@@ -163,12 +167,20 @@ $('#register').on('click',function(e){
         			"terminos": terminos
     				};
 
-    	//enviamos la peticion POST
+    	
         var url = 'http://localhost:8888/lead/add';
-		
-        
-		//console.log(nombre, nit, punto, equipo, ciudad, promotor, rtc, capitan, terminos);
-        //pendiente IP con php
+
+        //enviamos la peticion POST
+		$.ajax({
+        	url: url,
+        	type: 'POST',
+        	data: obj,
+        	success: function(r){
+        		console.log(r);
+        	}
+        });
+
+		//pendiente IP con php
     
     }
     

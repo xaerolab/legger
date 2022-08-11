@@ -71,6 +71,18 @@ body{
     color: #D14655;
     font-size: 12px;
   }
+  /*clase auxiliar para ocultar*/
+  .displayNone{
+    display: none;
+  }
+
+  /*ajustes de gif loader*/
+  #loader{
+    width: 64px;
+    display: block;
+    margin: 0px auto;
+  }
+
   /*ajustes para responsividad*/
   @media only screen and (max-width: 991px) {
     #form-container{
