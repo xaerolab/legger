@@ -151,7 +151,23 @@ $('#register').on('click',function(e){
     //si no hay errores en el formulario
     if(!errNombre && !errNit && !errPunto && !errEquipo && !errCiudad && !errPromotor && !errRtc && !errCapitan && !errTerminos){
         
-        console.log(nombre, nit, punto, equipo, ciudad, promotor, rtc, capitan, terminos);
+        //creamos el objeto JSON
+        var obj = {	"nombre":nombre,
+        			"nit": nit,
+        			"punto": punto,
+        			"equipo": equipo,
+        			"ciudad": ciudad,
+        			"promotor": promotor,
+        			"rtc": rtc,
+        			"capitan": capitan,
+        			"terminos": terminos
+    				};
+
+    	//enviamos la peticion POST
+        var url = 'http://localhost:8888/lead/add';
+		
+        
+		//console.log(nombre, nit, punto, equipo, ciudad, promotor, rtc, capitan, terminos);
         //pendiente IP con php
     
     }
