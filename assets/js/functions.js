@@ -176,7 +176,21 @@ $('#register').on('click',function(e){
         	type: 'POST',
         	data: obj,
         	success: function(r){
-        		console.log(r);
+        		if(r == true){
+        			Swal.fire({
+					  title: 'Registro exitoso!',
+					  confirmButtonText: 'OK',
+					  allowOutsideClick: false
+					}).then((result) => {
+					  /* Read more about isConfirmed, isDenied below */
+					  if (result.isConfirmed) {
+					  	$('#form-container').addClass('displayNone');
+					    Swal.fire('Gracias!', '', 'success')
+					  }
+					});
+
+        			
+        		}
         	}
         });
 
