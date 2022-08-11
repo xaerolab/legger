@@ -152,10 +152,8 @@ $('#register').on('click',function(e){
     if(!errNombre && !errNit && !errPunto && !errEquipo && !errCiudad && !errPromotor && !errRtc && !errCapitan && !errTerminos){
         
         console.log(nombre, nit, punto, equipo, ciudad, promotor, rtc, capitan, terminos);
-        
-        
-
-    }
+        //pendiente IP con php
     
+    }
     
 });
