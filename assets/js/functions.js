@@ -2,7 +2,7 @@ $(document).ready(function(){
     console.log('Bienvenidos a esta landing!! 👽');
 });
 
-//validacion de formulario
+//validacion de formulario y registro con rest
 $('#register').on('click',function(e){
     e.preventDefault();
 
@@ -199,3 +199,5 @@ $('#register').on('click',function(e){
     }
     
 });
+
+
