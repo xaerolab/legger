@@ -49,14 +49,17 @@
 
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" id="nit" placeholder="NIT">
+                            <span id="errNit" class="errForm"></span>
                         </div>
 
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" id="punto" placeholder="Nombre del punto">
+                            <span id="errPunto" class="errForm"></span>
                         </div>
 
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" id="equipo" placeholder="Nombre del equipo">
+                            <span id="errEquipo" class="errForm"></span>
                         </div>
 
                         <div class="form-group mb-3">
@@ -68,24 +71,29 @@
                                 <option value="Santa Marta">Santa Marta</option>
                                 <option value="Cartagena">Cartagena</option>
                             </select>
+                            <span id="errCiudad" class="errForm"></span>
                         </div>
                         
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" id="promotor" placeholder="Promotor">
+                            <span id="errPromotor" class="errForm"></span>
                         </div>
 
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" id="rtc" placeholder="RTC">
+                            <span id="errRtc" class="errForm"></span>
                         </div>
 
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" id="capitan" placeholder="Capitan y/o usuario (solo minúsculas)">
+                            <span id="errCapitan" class="errForm"></span>
                         </div>
 
                         
                         <div class="form-check mb-3">
                           <input type="checkbox" class="form-check-input" id="terminos">
                           <label class="form-check-label" for="terminos"><span id="texto-terminos">He leido y acepto las politicas de tratamiento de datos personales. Conoce terminos y condiciones.</span></label>
+                          <span id="errTerminos" class="errForm"></span>
                         </div>
 
                         <button type="submit" class="btn btn-form" id="register">Siguiente</button>
