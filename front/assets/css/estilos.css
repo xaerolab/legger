@@ -67,6 +67,10 @@ body{
    width: 70%;
   }
 
+  .errForm{
+    color: #D14655;
+    font-size: 12px;
+  }
   /*ajustes para responsividad*/
   @media only screen and (max-width: 991px) {
     #form-container{
